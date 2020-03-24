@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	</head>
+	
+
+
+<style type="text/css">
+	img {
+          height: 15%;
+          max-width: 2000px;   
+          width: 15%;
+          min-height: left;      
+          background-size:10%;
+          background-repeat: no-repeat;
+	   } .salvar {
+        width: 50%
+     } .cancelar {
+      width: 50%
+     } .button {
+    float: right;
+}.col-md-6{
+   padding-right: 133px !important;
+}.centralizado {
+    margin: 0 auto !important;
+    float: none !important;style
+}
+</style>
+
+<body>
+
+<div class="container">
+	
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed "><img src="img/senac.jpg" class="img-thumbnail" />
+      
+            <a class="navbar-brand ml-5 text-primary ">Relatórios
+            </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+          data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" style="background-color: #FFA500">
+            </span>
+      </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+          <a class="nav-link disabled text-primary text-primary" href="#" tabindex="-1" aria-disabled="true">Perfil</a>
+        </li>
+      <li class="nav-item">
+          <a class="nav-link disabled text-primary" href="# text-primary"  tabindex="-1" aria-disabled="true">Ajuda</a>
+      </li>
+    </ul>
+    
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+         <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-primary" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Opções
+          </a>
+
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Consultar cliente</a>
+          <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Editar cliente</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Excluir cliente </a>
+        </div>
+        </li>
+      </ul>
+
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Pesquisar</button>
+        </form>
+      </div>
+    </nav>
+</header>
+
+    <div class="jumbotron" style="background-image: linear-gradient(to top, #003466, #004384);">
+<p class="display-4 mt-5 text-center" style="color: white"> Relatórios de índices de ações
+    </p>
+  </div>
+	
+
+
+
+
+
+
+  <div class="card text-center">
+     
+
+    <hr style="height:2px; border:none; color:rgb(247, 148, 29); background-color:rgb(247, 148, 29);; margin-top: 0px; margin-bottom: 0px;"/>
+<table class="table ">
+  <thead class="">
+
+    <tr>
+      <th scope="col"></th>
+      <th scope="col">Oferta</th>
+      <th scope="col">Contato</th>
+      <th scope="col">Dúvida</th>
+      <th scope="col">Ação</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Excel avançado</td>
+      <td>Telefônico</td>
+      <td><span class="badge badge-primary badge-pill">10</span> usuários tiveram dúvidas sobre a oferta</td>
+      <td>
+         
+            <button class="btn" style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;">Exportar para PDF</button>
+              <button class="btn" style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;">Registro em gráficos</button>
+              
+          </td>
+         
+          
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Técnico em química</td>
+      <td>Email</td>
+      <td><span class="badge badge-primary badge-pill">29</span> usuários tiveram dúvidas sobre a oferta</td>
+      <td><button class="btn "
+        (click)="atualizar(cidade) mr-5" style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;">Exportar para PDF</button> <button class="btn " style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;
+        (click)="atualizar(cidade) mr-5">Registro em gráficos</button></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Graduação em Hotelaria</td>
+      <td>Whatsapp</td>
+      <td><span class="badge badge-primary badge-pill">32</span> usuários tiveram dúvidas sobre a oferta </td>
+      <td><button class="btn" style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;"
+        (click)="atualizar(cidade) mr-5">Exportar para PDF</button> <button class="btn " style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;"
+        (click)="atualizar(cidade) mr-5">Registro em gráficos</button></td>
+    </tr>
+
+    <tr>
+        <th scope="row">4</th>
+        <td>Técnico em informática</td>
+        <td>Whatsapp</td>
+        <td><span class="badge badge-primary badge-pill">103</span> usuários tiveram dúvidas sobre a oferta </td>
+        <td><button class="btn" style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;"
+          (click)="atualizar(cidade) mr-5">Exportar para PDF</button> <button class="btn " style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;"
+          (click)="atualizar(cidade) mr-5">Registro em gráficos</button></td>
+      </tr>
+
+      <tr>
+          <th scope="row">5</th>
+          <td>Graduação em Recursos Humanos</td>
+          <td>Whatsapp</td>
+          <td><span class="badge badge-primary badge-pill">205</span> usuários tiveram dúvidas sobre a oferta </td>
+          <td><button class="btn" style="background-image: linear-gradient(to top, #f47100, #f79117); color: white;"
+            (click)="atualizar(cidade) mr-5">Exportar para PDF</button> <button class="btn " style="background-image: linear-gradient(to top, #f47100, #f79117);color: white"
+            (click)="atualizar(cidade) mr-5">Registro em gráficos</button></td>
+        </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+  
+        
+      </div>
+      <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center mt-3">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Previous</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+    </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!--Inicio da função JQUERY-->
+      <script >
+            $("#add-campo").click(function() {
+                $("#formulario").append('<div class="form-group p-5"> <label class="font-italic font-weight-lighter mt-2">Novo campo</label> <div class="form-group col-md-12"><input class="form-control" placeholder="Inserir dado"></div>');
+                
+            });  
+     
+          
+      </script>
+
+</body>
+
+
+</html>
